@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDA0DD"
+    tools:context="com.tugas.hisyam.gymsum.register">
+
+    <EditText
+        android:id="@+id/tMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tPass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="e-Mail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="****"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/cDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tPass"
+        android:layout_marginTop="31dp"
+        android:onClick="bDaftar"
+        android:text="Daftar"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/logo" />
+</RelativeLayout>

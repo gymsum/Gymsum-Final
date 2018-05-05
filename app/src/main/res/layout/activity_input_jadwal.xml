@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDA0DD"
+    tools:context="com.tugas.hisyam.gymsum.InputJadwal">
+
+
+    <TextView
+        android:id="@+id/TVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Input Your Exercise Schedule"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TVDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TVTitle"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="51dp"
+        android:text="TextView"
+        tools:text="Days" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TVDays"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/TVDays"
+        android:layout_toRightOf="@+id/TVDays"
+        android:entries="@array/days" />
+
+    <TextView
+        android:id="@+id/TVExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TVDays"
+        android:layout_alignStart="@+id/TVDays"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="44dp"
+        android:text="Exercises" />
+
+    <CheckBox
+        android:id="@+id/AbRoller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TVExercise"
+        android:layout_alignBottom="@+id/TVExercise"
+        android:layout_alignEnd="@+id/buttonInput"
+        android:layout_alignRight="@+id/buttonInput"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="selectItem"
+        android:text="@string/AbRoller" />
+
+    <CheckBox
+        android:id="@+id/Butterfly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AbRoller"
+        android:layout_alignStart="@+id/AbRoller"
+        android:layout_below="@+id/AbRoller"
+        android:text="@string/Butterfly"
+        android:onClick="selectItem" />
+
+    <CheckBox
+        android:id="@+id/Cocoons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Butterfly"
+        android:layout_alignStart="@+id/Butterfly"
+        android:layout_below="@+id/Butterfly"
+        android:text="@string/Cocoons"
+        android:onClick="selectItem"
+        />
+
+    <CheckBox
+        android:id="@+id/DeclineCrunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Cocoons"
+        android:layout_alignStart="@+id/Cocoons"
+        android:layout_below="@+id/Cocoons"
+        android:text="@string/DeclineCrunch"
+        android:onClick="selectItem"
+        />
+
+    <CheckBox
+        android:id="@+id/FrontSquad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DeclineCrunch"
+        android:layout_alignStart="@+id/DeclineCrunch"
+        android:layout_below="@+id/DeclineCrunch"
+        android:text="@string/FrontSquad"
+        android:onClick="selectItem"
+        />
+
+    <CheckBox
+        android:id="@+id/PushUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FrontSquad"
+        android:layout_alignStart="@+id/FrontSquad"
+        android:layout_below="@+id/FrontSquad"
+        android:text="@string/PushUp"
+        android:onClick="selectItem"
+        />
+
+    <Button
+        android:id="@+id/buttonInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PushUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="INPUT" />
+
+</RelativeLayout>

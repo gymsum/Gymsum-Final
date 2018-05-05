@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textColor="#161a49"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/namaLatihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:maxLines="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@id/namaLatihan"
+                android:textStyle="italic"
+                android:id="@+id/detailLatihan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+               />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

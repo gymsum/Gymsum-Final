@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GymSum</string>
+    <string name="title_activity_logout">Logout</string>
+    <string name="title_activity_profil">Profil</string>
+</resources>
